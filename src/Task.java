@@ -9,10 +9,10 @@ public class Task implements Repeat {
     private ListTask listTask;
     private LocalDateTime dateTime;
 
-    private static int idGenerator = 0;
+    private static int idGenerator = 1;
 
     public Task(String header, String description, ListTask listTask, LocalDateTime localDateTime) {
-        this.id = idGenerator;
+        this.id = idGenerator++;
         this.header = header;
         this.description = description;
         this.listTask = listTask;
